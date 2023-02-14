@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "f8f18064-c34f-4d14-88cc-fb58591993b7",
+		"name": "Zendesk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Users",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "3kBi95xPJJXsFQm7vyEWeXAKzfOsPFyRAT6F1mVO",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "juan@haggen-it.com/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/users?pagination=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "end-user",
+							"disabled": true
+						},
+						{
+							"key": "pagination",
+							"value": "3"
+						},
+						{
+							"key": "next",
+							"value": "https://d3v-haggen-it.zendesk.com/api/v2/users?page%5Bafter%5D=eyJvIjoiaWQiLCJ2IjoiYVJzNzhXaFpDZ0FBIn0%3D&page%5Bsize%5D=5&role=end-user",
+							"disabled": true
+						},
+						{
+							"key": "prev",
+							"value": "https://d3v-haggen-it.zendesk.com/api/v2/users?page%5Bbefore%5D=eyJvIjoiaWQiLCJ2IjoiYVJ1djhtaFpDZ0FBIn0%3D&page%5Bsize%5D=5&role=end-user",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
