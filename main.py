@@ -9,9 +9,9 @@ app = FastAPI()
 
 
 @app.get("/users")
-def list_users():
+def list_users(role: str = "end-user", pagination: int | None = None):
    users = utils.get_users_by_role(
-       f"{settings.subdomain}.zendesk.com", settings.username, settings.password, "end-user")
+       f"{settings.subdomain}.zendesk.com", settings.username, settings.password, role, pagination)
    return users
 
 

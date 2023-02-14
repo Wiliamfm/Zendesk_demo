@@ -25,4 +25,4 @@ class User(BaseModel):
 
 class Users_Response(BaseModel):
    users: list[User]
-   links: dict[str, str]
+   links: dict[str, str] | None
