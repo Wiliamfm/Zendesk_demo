@@ -9,6 +9,5 @@ def get_users_by_role(url: str | None, domain: str, user: str, pwd: str, role: s
       else:
          url = f"https://{domain}/api/v2/users?role={role}&page[size]={pagination}"
    r = req.get(url, auth=(user, pwd))
-   print(r.json())
    users: models.Users_Response = models.Users_Response(**r.json())
    return users
