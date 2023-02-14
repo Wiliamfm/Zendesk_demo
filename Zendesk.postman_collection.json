@@ -8,21 +8,6 @@
 		{
 			"name": "List Users",
 			"request": {
-				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "password",
-							"value": "3kBi95xPJJXsFQm7vyEWeXAKzfOsPFyRAT6F1mVO",
-							"type": "string"
-						},
-						{
-							"key": "username",
-							"value": "juan@haggen-it.com/token",
-							"type": "string"
-						}
-					]
-				},
 				"method": "GET",
 				"header": [],
 				"url": {
