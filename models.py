@@ -23,5 +23,6 @@ class User(BaseModel):
    url: str | None
 
 
-class Users(BaseModel):
+class Users_Response(BaseModel):
    users: list[User]
+   links: dict[str, str]
